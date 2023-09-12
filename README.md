@@ -5,7 +5,7 @@ A REST API capable of performing CRUD operations on a "Person" resource.
 ## Getting Started
 This project is built with Gin Gonic, a web framework for Go. It uses a SQLite database and GORM as the ORM.
 
-BaseURL: `https://hngxx-task-2.onrender.com/`
+**BaseURL**: `https://hngxx-task-2.onrender.com/`
 
 ## Usage
 - Clone the repository
@@ -86,6 +86,6 @@ BaseURL: `https://hngxx-task-2.onrender.com/`
 }
 ```
 ## Testing
-Test the live API with a collection in postman
+Test the live API with a collection in [Postman](https://www.postman.com/)
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://elements.getpostman.com/redirect?entityId=21533336-c9cc0288-e477-405d-9166-f4c183e0e9f5&entityType=collection)
