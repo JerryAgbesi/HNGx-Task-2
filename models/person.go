@@ -1,6 +1,8 @@
 package models
 
+import "gorm.io/gorm"
+
 type Person struct {
-	Id   string `json:"id"`
+	gorm.Model
 	Name string `json:"name"`
 }

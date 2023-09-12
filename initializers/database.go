@@ -1,22 +1,22 @@
 package initializers
 
 import (
-	"jerryagbesi/hngxtask2/models"
 	"log"
 
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
 
+var DB *gorm.DB
 
+func ConnectDatabase(){
+	var err error
 
-func connectDatabase(){
-	db,err := gorm.Open(sqlite.Open("database.db"),&gorm.Config{})
+	DB, err = gorm.Open(sqlite.Open("database.db"),&gorm.Config{})
 
 	if err != nil{
 		log.Fatal("Failed to connect to database",err)
 	}
 
-	db.AutoMigrate(&models.Person{})
 
 }
