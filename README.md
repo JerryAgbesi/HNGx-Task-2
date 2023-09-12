@@ -7,7 +7,6 @@ This project is built with Gin Gonic, a web framework for Go. It uses a SQLite d
 
 BaseURL: `https://hngxx-task-2.onrender.com/`
 
-## UML Diagram
 ## Usage
 - Clone the repository
 
@@ -21,7 +20,7 @@ BaseURL: `https://hngxx-task-2.onrender.com/`
     ```
 
 ## Endpoints
-| Name | Request Method | Endpoint | Parameters | Response code |
+| Name | Request Method | Endpoint | Route Parameters | Response code |
 | --- | --- | --- | --- | --- |
 |Create a person | POST | /api | None | 201 CREATED|
 
@@ -40,7 +39,7 @@ BaseURL: `https://hngxx-task-2.onrender.com/`
 }
 ```
 
-| Name | Request Method | Endpoint | Parameters | Response code |
+| Name | Request Method | Endpoint | Route Parameters | Response code |
 | --- | --- | --- | --- | --- |
 |Retrieve a person| GET | /api/{id} | id | 200 OK|
 
@@ -54,9 +53,9 @@ BaseURL: `https://hngxx-task-2.onrender.com/`
 }
 ```
 
-| Name | Request Method | Endpoint | Parameters | Response code |
+| Name | Request Method | Endpoint | Route Parameters | Response code |
 | --- | --- | --- | --- | --- |
-|Update details of a person | PUT | /api/{id} | None | 200 OK|
+|Update details of a person | PUT | /api/{id} | id | 200 OK|
 
 - Request Body
 
@@ -69,13 +68,13 @@ BaseURL: `https://hngxx-task-2.onrender.com/`
 ```json
 {
     "id": 1,
-    "name": "BeRtram Gilfoyle",
+    "name": "Bertram Gilfoyle",
 }
 ```
 
-| Name | Request Method | Endpoint | Parameters | Response code |
+| Name | Request Method | Endpoint | Route Parameters | Response code |
 | --- | --- | --- | --- | --- |
-|Delete a person| GET | /api/{id} | id | 204 NO CONTENT|
+|Delete a person| DELETE | /api/{id} | id | 204 NO CONTENT|
 
 - Request Body : None
 
@@ -89,4 +88,4 @@ BaseURL: `https://hngxx-task-2.onrender.com/`
 ## Testing
 Test the live API with a collection in postman
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/1a0b3b6b3b1b0b0b0b0b)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://elements.getpostman.com/redirect?entityId=21533336-c9cc0288-e477-405d-9166-f4c183e0e9f5&entityType=collection)
