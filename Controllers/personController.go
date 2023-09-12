@@ -97,6 +97,8 @@ func DeletePerson(c *gin.Context){
 		return
 	}
 
+	initializers.DB.Delete(&person)
+
 	c.Status(204)
 
 }

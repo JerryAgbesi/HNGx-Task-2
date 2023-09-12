@@ -87,4 +87,6 @@ BaseURL: `https://hngxx-task-2.onrender.com/`
 }
 ```
 ## Testing
+Test the live API with a collection in postman
 
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/1a0b3b6b3b1b0b0b0b0b)
