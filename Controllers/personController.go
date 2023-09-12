@@ -7,6 +7,12 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+func Root(c *gin.Context){
+	c.JSON(200, gin.H{
+		"message": "Welcome to the HNGX REST API"})
+
+}
+
 func CreatePerson(c *gin.Context) {
 
 	var body struct {

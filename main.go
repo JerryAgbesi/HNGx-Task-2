@@ -18,7 +18,7 @@ func main() {
 	router := gin.Default()
 	router.Use(utilities.CORS())
 
-
+    router.GET("/",Controllers.Root)
 	router.POST("api/", Controllers.CreatePerson)
 	router.GET("api/:id",Controllers.ReadPerson)
 	router.GET("api/",Controllers.ReadPersonList) //returns a paginated list of records
